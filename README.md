@@ -549,8 +549,8 @@ li.liste1{
 .sonbaslik{
     margin-left: 60%;
     font-weight:500;
-}
-   ```
+          }
+  ```
 ## :brain: CSS Ödev-1 Sayfamıza Biraz Makyaj Yapalım
 
 
