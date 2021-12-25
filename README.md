@@ -203,6 +203,7 @@ Bu videoda; şimdiye kadar öğrendiğimiz HTML etiketleri ile bir web sitesi ol
 </body>
 </html>
      ```
+  
   //index.html
    ```html
   <!DOCTYPE html>
