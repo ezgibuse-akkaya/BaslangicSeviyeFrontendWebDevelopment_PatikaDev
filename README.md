@@ -130,8 +130,10 @@ Bu videoda; şimdiye kadar öğrendiğimiz HTML etiketleri ile bir web sitesi ol
 ### :green_square: CEVAP
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
-//about_us.html
+
+  //about_us.html
 ```html
+  
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -200,8 +202,8 @@ Bu videoda; şimdiye kadar öğrendiğimiz HTML etiketleri ile bir web sitesi ol
     <!-- Footer - End -->
 </body>
 </html>
-    ```
   
+    ```
   //contact.html
    ```html
   <!DOCTYPE html>
