@@ -788,3 +788,167 @@ body{
     padding-left: 150px;
 }
   ```
+  
+  ## :brain: CSS Ödev-2  Google Ana Sayfasını Tasarlamak
+  
+Hepimiz her gün Google kullanıyoruz ve çok işimize yarıyor değil mi? Her gün Google'da milyonlarca arama yapılıyor ve hatta siz de bu sayfaya gelmek için Google'ı kullanmış olabilirsiniz. Peki Google'ın geçmişten günümüze nasıl geliştiğini hiç merak ettiniz mi?
+
+Google 1996 yılında kuruldu ve ilk versiyonunu 1998 yılında yayınladı. 1998, çok uzun bir süre önce değil mi? İlk versiyonu ile şu anki versiyonu arasında büyük fark var tabii ki. Peki size Google'ın ilk versiyonunu gösterebileceğimizi söylesek ne hissederdiniz?
+
+İnternetteki gelmiş geçmiş bütün web sitelerini görebileceğiniz Wayback Machine adında bir web arşivi bulunmakta. Google 1998 linkinden Google'ın ilk versiyonu nasılmış görebilirsiniz. Oldukça garip öyle değil mi? Garip olmasının yanında bu sizin HTML bölümündeki üçüncü ve son ödeviniz olacak. Bu sayfayı tasarlamanızı istiyoruz.
+
+~Bu sayfada şu ana kadar öğrendiğiniz her şeyi kullanabilirsiniz. Bu sizin HTML becerilerinizi oldukça iyi bir şekilde geliştirmenizi sağlayacaktır.
+~Butonların çalışmaması hiç sorun değil. Sadece tasarımsal olarak bu görüntüye benzesin ve aşağıdaki linkler çalışıyor olsun yeterli.
+~Tasarladığınız bölümler ile alakalı kodunuzda açıklama satırlarına yer veriniz.
+~Sayfa ile alakalı detaylara sayfanın üzerine sağ tıklayıp "İncele/Inspect" diyerek ulaşabilirsiniz.
+
+### :green_square: CEVAP
+  
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+  //index.html
+```html
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Google</title>
+</head>
+<body>
+    <header class="header">
+        <!-- Logo -->
+        <nav><img src="img/google.jpg" alt="logo"></nav>
+    </header>
+    <section class="section-search">
+        <!-- Search Area -->
+        <p class="inline">Search the web using Google!</p><br>
+        <input class="input-1" type="text"><br>
+        <button>Google Search</button>
+        <button>I'm feeling lucky</button>
+    </section>
+    
+    <section class="section-types">
+        <!-- Search Types -->
+        <article class="art-1">
+            <ul class="stypelist">
+                <li><a href="#">Special Searches</a></li>
+                <li><a href="#">Stanford Search</a></li>
+                <li><a href="#">Linux Search</a></li>
+            </ul>
+        </article>
+        
+        <!-- Help And Info Area -->
+        <article class="art-2">
+            <ul class="helplist">
+                <li><a href="#">Help!</a></li>
+                <li><a href="#">About Google!</a></li>
+                <li><a href="#">Company Info</a></li>
+                <li><a href="#">Google! Logos</a></li>
+            </ul>
+        </article>
+
+        <!-- Subscribe Area -->
+        <article class="art-3">
+            <p class="m-0 p-0">Get Google!<br>updates monthly:</p>
+            <input placeholder="your e-mail" type="email"><br>
+            <button>Subscribe</button>
+            <a href="#" style="margin-left: 10px;">Archive</a>
+        </article>
+    </section>
+
+    <!-- Copyright Footer -->
+    <Footer class="footer">
+        <p>Copyright ©1998 Google Inc.</p>
+    </Footer>
+</body>
+</html>
+```
+  //style.css
+```css
+  /* --------------- General --------------- */
+.inline {
+    display: inline;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+/* --------------- Header --------------- */
+.header {
+    text-align: center;
+}
+
+/* --------------- Search Area --------------- */
+.section-search {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background: #eeeeee;
+}
+.input-1 {
+    width: 25%;
+}
+
+/* --------------- Search Types --------------- */
+.section-types {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.art-1 {
+    background: #7ee5da;
+    text-align: center;
+    margin-top: 3px;
+    width: 38%;
+    padding: 19px;
+}
+
+.stypelist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.art-2 {
+    background: #70ccc2;
+    text-align: center;
+    margin-left: 3px;
+    width: 15%;
+    margin-top: 3px;
+    padding: 10px;
+}
+
+.helplist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.art-3 {
+    background: #62b3aa;
+    text-align: center;
+    margin-left: 3px;
+    width: 47%;
+    margin-top: 3px;
+    padding: 7px;
+}
+
+/* --------------- Footer --------------- */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+}
+  ```
+  </detail>
