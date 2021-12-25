@@ -789,7 +789,8 @@ body{
 }
   ```
   </details>
-  ## :brain: CSS Ödev-2 Google Ana Sayfasını Tasarlamak
+  
+## :brain: CSS Ödev-2 Google Ana Sayfasını Tasarlamak
 
 
 ### :question: SORU 
