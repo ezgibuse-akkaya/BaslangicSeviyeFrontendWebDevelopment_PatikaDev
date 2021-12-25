@@ -202,9 +202,9 @@ Bu videoda; şimdiye kadar öğrendiğimiz HTML etiketleri ile bir web sitesi ol
     <!-- Footer - End -->
 </body>
 </html>
-     ```
+  ```
   
-  //index.html
+  //contact.html
    ```html
   
   <!DOCTYPE html>
