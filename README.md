@@ -206,6 +206,7 @@ Bu videoda; şimdiye kadar öğrendiğimiz HTML etiketleri ile bir web sitesi ol
   
   //index.html
    ```html
+  
   <!DOCTYPE html>
 <html lang="tr">
 <head>
