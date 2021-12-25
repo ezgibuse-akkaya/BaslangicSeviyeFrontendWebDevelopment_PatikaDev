@@ -790,26 +790,11 @@ body{
   ```
   </details>
   
-  ## :brain: CSS Ödev-2  Google Ana Sayfasını Tasarlamak
-  
-Hepimiz her gün Google kullanıyoruz ve çok işimize yarıyor değil mi? Her gün Google'da milyonlarca arama yapılıyor ve hatta siz de bu sayfaya gelmek için Google'ı kullanmış olabilirsiniz. Peki Google'ın geçmişten günümüze nasıl geliştiğini hiç merak ettiniz mi?
+ Ödev 3
+Google Ana Sayfasını Tasarlamak
+Bir zamanlar basit ama gururlu bir Google Ana Sayfası vardı, hatırladınız mı? Yıllaar yıllar geçti ve o ana sayfa gelişti, serpildi ve bugünkü halini aldı. HTML'in son ödevinde Google'ın ilk tasarımı üzerinde çalışmıştık ve CSS bölümünde günümüzdeki halini tasarlayacağımızı söylemiştik. Evet, o gün bugündür arkadaşlar. Bu ödevde Google'ın bugünkü ana sayfasını tasarlayacağız.
 
-Google 1996 yılında kuruldu ve ilk versiyonunu 1998 yılında yayınladı. 1998, çok uzun bir süre önce değil mi? İlk versiyonu ile şu anki versiyonu arasında büyük fark var tabii ki. Peki size Google'ın ilk versiyonunu gösterebileceğimizi söylesek ne hissederdiniz?
-
-İnternetteki gelmiş geçmiş bütün web sitelerini görebileceğiniz Wayback Machine adında bir web arşivi bulunmakta. Google 1998 linkinden Google'ın ilk versiyonu nasılmış görebilirsiniz. Oldukça garip öyle değil mi? Garip olmasının yanında bu sizin HTML bölümündeki üçüncü ve son ödeviniz olacak. Bu sayfayı tasarlamanızı istiyoruz.
-
-~Bu sayfada şu ana kadar öğrendiğiniz her şeyi kullanabilirsiniz. Bu sizin HTML becerilerinizi oldukça iyi bir şekilde geliştirmenizi sağlayacaktır.
-~Butonların çalışmaması hiç sorun değil. Sadece tasarımsal olarak bu görüntüye benzesin ve aşağıdaki linkler çalışıyor olsun yeterli.
-~Tasarladığınız bölümler ile alakalı kodunuzda açıklama satırlarına yer veriniz.
-~Sayfa ile alakalı detaylara sayfanın üzerine sağ tıklayıp "İncele/Inspect" diyerek ulaşabilirsiniz.
-
-### :green_square: CEVAP
-  
-<details>
-<summary>Kodu görmek için tıklayınız.</summary>
-
-  //index.html
-```html
+Sizler için HTML yapısını ve basit CSS'i hazırladık. Sizlerden istediğimiz orijinali inceleyip detayları işlemeniz.
   <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -953,3 +938,314 @@ Google 1996 yılında kuruldu ve ilk versiyonunu 1998 yılında yayınladı. 199
 }
   ```
   </detail>
+  
+  ## :brain: CSS Ödev-3 Google Ana Sayfasını Tasarlamak
+
+
+### :question: SORU 
+Bir zamanlar basit ama gururlu bir Google Ana Sayfası vardı, hatırladınız mı? Yıllaar yıllar geçti ve o ana sayfa gelişti, serpildi ve bugünkü halini aldı. HTML'in son ödevinde Google'ın ilk tasarımı üzerinde çalışmıştık ve CSS bölümünde günümüzdeki halini tasarlayacağımızı söylemiştik. Evet, o gün bugündür arkadaşlar. Bu ödevde Google'ın bugünkü ana sayfasını tasarlayacağız.
+
+Sizler için HTML yapısını ve basit CSS'i hazırladık. Sizlerden istediğimiz orijinali inceleyip detayları işlemeniz.
+Google Homepage Projesi'ne buradan erişebilirsiniz.
+
+Projeyi indirdikten ya da cloneladıktan sonra Visual Studio Code programında LiveServer eklentisi ile açmanızı öneririz.
+
+Google Ana Sayfa için arşiv linkini kullanabilirsiniz ya da Google'ın şimdiki ana sayfasını kullanabilirsiniz.
+
+Bu ödevi yapabilmeniz için bolca "İncele/Inspect"'ten yararlanmanız gerekecektir. Sayfadayken sayfaya sağ tıklayıp "İncele/Inspect" demeniz yeterlidir.
+
+Fark ettiyseniz logo eski bir Google logosu. Bu logoyu günümüzde logo ile değiştirmelisiniz. Kullanmanız gereken logo assets klasöründe bulunmakta.
+
+Üstteki alanı sağ tarafa alın ve fotoğrafı kendi fotoğrafınız ile değiştirin ve fotoğrafın kenarlarını yarıçap özelliği ile düzenleyiniz.
+
+Arama yapılacak alanın kenarlarını yarıçap özelliği ile düzenleyiniz.
+
+Arama simgesi gibi sesle arama simgesini de siz ekleyin. (Nasıl yapıldığını görmek için Google Ana Sayfa'dan İncele ile yazılanları inceleyiniz.)
+
+Arama alanında yazı yazılan yerin genişliği 480px olmalı ve kenarlığı olmamalı.
+
+Buttonları ortaya alıp üstünden ve sağından boşluklar veriniz. Button kenarları 1px kalın #f2f2f2 renginde olmalı. Yazı tipi Arial, yazı rengi #5f6368, yazı boyutu 14px olmalı. Button yüksekliği 36px olmalı.
+
+Buttonlara aynı arama alanında olduğu gibi gölge veriniz.
+
+Footerda arkaplan rengini #f2f2f2 yapınız ve liste noktalarını ortadan kaldırın. (Bir önceki ödevde söylediğimiz w3schools.com'un CSS tutorialını, Türkçe kaynak için Fatih Hayrioğlu'un sitesini kullanabilirsiniz.)
+
+CSS dosyasında kullanılan bütün elementleri araştırıp ne işe yaradıklarını öğrenin. Daha sonra bunları kullanabileceğiniz projelerinizde kullanmaya özen gösterin.
+
+Tasarımı mümkün olduğunca benzetmeniz gerekmekte. Buttonların, arama kısmının çalışmaması önemli değil.
+
+Kod yazarken yorum satırları kullanmaya özen gösteriniz. ödevin indirilebilir içeriklerine buradan ulaşabilirsiniz.
+
+### :green_square: CEVAP
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+  //index.html
+```html
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <a class="nav-left-a" href="#">About</a>
+                <a class="nav-left-a" href="#">Store</a>
+            
+                <div class="nav-right">
+                    <div class="nav-right-in">
+                        <div class="nav-right-divs mt-8"><a href="#">Gmail</a></div>
+                        <div class="nav-right-divs mt-8"><a href="#">Images</a></div>
+                        <div class="nav-right-divs mt-6 imghover"><a href="#"><img class="bradius" src="img/dottedlogo.png" alt=""></a></div>
+                        <div class="nav-right-divs"><a href="#"><img class="bradius" src="img/profilepic.jpg" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <section class="main">
+        <!-- Logo -->
+        <div class="img">
+            <img src="img/googleAmblem.png" alt="Google">
+        </div>
+        <!-- Search -->
+        <form class="form" action="" method="get">
+            <!-- Input -->
+            <div class="input-area">
+                <div class="simage">
+                    <img src="img/searchlogo.png" alt="">
+                </div>
+                <div class="inputdiv">
+                    <input class="input" name="" id="">
+                </div>
+                <div class="inputright">
+                    <div class="mimage"><img width="24" src="img/voicelogo.png" alt=""></div>
+                </div>
+            </div>
+            <div class="buttonsdiv">
+                <button class="button">Google Search</button>
+                <button class="button">I'm Feeling Lucky</button>
+            </div>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="lside">
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">How Search works</a>
+        </div>
+        <div class="rside">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+        </div>
+    </footer>
+</body>
+</html>
+  ```
+  //style.css
+  ```css
+  /* General */
+body{
+    font-family: arial,sans-serif;
+    background: #fff;
+    color: #222;
+}
+.bradius{
+    border-radius: 100%;
+}
+.mt-6{
+    margin-top: 6px;
+}
+.mt-8{
+    margin-top: 8px;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+/* Header */
+.nav {
+    position: relative;
+    top: 16px;
+    font-size: 13px;
+}
+.nav-left{
+    margin: -1px 0 0 2px;
+    font-size: 13px;
+}
+.nav-left-a{
+    display: inline-block;
+    padding-left: 15px;
+    color: #000;
+    opacity: 0.75;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-left-a:hover{
+    text-decoration: underline;
+}
+.nav-right{
+    font-size: 13px;
+    color: #000;
+    float: right;
+    margin-right: 10px;
+    margin-top: -7px;
+}
+.nav-right-in{
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.nav-right-divs{
+    margin-left: 20px;
+
+}
+.imghover:hover{
+    opacity: 0.5;
+}
+.nav-right-divs>a:hover{
+    text-decoration: underline;
+    color: #222;
+}
+
+/* Main */
+.main{
+    height: 233px;
+    margin-top: 89px;
+    text-align: center;
+}
+.img{
+    margin-top: 176px;
+}
+.form{
+    height: 118px;
+}
+.input-area{
+    width: 582px;
+    margin: 0 auto;
+    margin-top: 23px;
+    padding-top: 6px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    z-index: 3;
+    height: 38px;
+    text-align: center;
+}
+.input-area:hover{
+    box-shadow: 1px 1px 12px -1px #ccc;
+}
+.simage{
+    display: inline;
+    float: left;
+    margin-top: 5px;
+    margin-left: 11px;
+}
+.inputdiv{
+    display: inline;
+}
+.input{
+    border: none;
+    background-color: transparent;
+    color: rgba(0,0,0,.87);
+    outline: none;
+    width: 484px;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 0px;
+    line-height: 34px; 
+}
+.inputright{
+    display: inline;
+}
+.mimage{
+    display: inline;
+    float: right;
+    margin-right: 16px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.buttonsdiv{
+    margin-top: 19px;
+    margin-left: -13px;
+}
+.button{
+    height: 36px;
+    min-width: 54px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #5F6368;
+    border-radius: 4px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.button:hover{
+    color: #222;
+    box-shadow: 1px 1px 3px 0px #ccc;
+    border: 1px solid #bbb;
+}
+
+/* Footer */
+.footer{
+    background: #f2f2f2;
+    min-width: 980px;
+    border-top: 1px solid #e4e4e4;
+    color: #222;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    line-height: 40px;
+    font-size: 10pt;
+}
+.lside{
+    display: inline;
+    float: left;
+}
+.rside{
+    display: inline;
+    float: right;
+    margin-right: 30px;
+}
+.lside>a{
+    color: #5f6368;
+    text-decoration: none;
+    white-space: nowrap;
+    padding-left: 27px;
+    margin: 0 !important;
+    cursor: pointer;
+    font-size: 14px;
+}
+.rside>a{
+    color: #5f6368;
+    text-decoration: none;
+    white-space: nowrap;
+    padding-left: 27px;
+    margin: 0 !important;
+    cursor: pointer;
+    font-size: 14px;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+```
+  </details>
