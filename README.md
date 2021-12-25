@@ -120,3 +120,254 @@ Kurduğunuz yapılarda block, inline gibi elementler kullanmaya çalışın.
 </html>
   ```
 </details>
+
+## :brain: Bölüm Sonu Çalışması
+
+
+### :question: SORU 
+Bu videoda; şimdiye kadar öğrendiğimiz HTML etiketleri ile bir web sitesi oluşturmaya çalışacağız. Anasayfa, hakkımızda ve iletişim sayfaları oluşturarak bir HTML projesi yapacağız.
+
+### :green_square: CEVAP
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+//about_us.html
+```html
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda | Kodluyoruz</title>
+</head>
+<body>
+    <!-- Navbar - Start -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Ana Sayfa</a>
+                </li>
+                <li>
+                    <a href="about-us.html">Hakkımızda</a>
+                </li>
+                <li>
+                    <a href="contact.html">İletişim</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Navbar - End -->
+
+    <!-- Content - Start -->
+    <section>
+        <!-- Articles - Start -->
+        <article>
+            <h2>Hakkımızda</h2>
+            <img src="https://picsum.photos/id/77/600/300" alt="Yazi 1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, sint?</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Ut culpa impedit repellat quasi!</p>
+            <p>Ducimus, error officia! Neque, nulla!</p>
+            <ol>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Rerum, neque ipsam?</li>
+                <li>Illum, cupiditate quisquam.</li>
+                <li>Magnam, sequi iure?</li>
+            </ol>
+            <hr>
+        </article>
+        <!-- Articles - End -->
+    </section>
+    <!-- Content - End -->
+
+    <!-- Footer - Start -->
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Ana Sayfa</a>
+                </li>
+                <li>
+                    <a href="about-us.html">Hakkımızda</a>
+                </li>
+                <li>
+                    <a href="contact.html">İletişim</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- Footer - End -->
+</body>
+</html>
+    ```
+  
+  //contact.html
+   ```html
+  <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Kodluyoruz</title>
+</head>
+<body>
+    <!-- Navbar - Start -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Ana Sayfa</a>
+                </li>
+                <li>
+                    <a href="about-us.html">Hakkımızda</a>
+                </li>
+                <li>
+                    <a href="contact.html">İletişim</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Navbar - End -->
+
+    <!-- Content - Start -->
+    <section>
+        <!-- Articles - Start -->
+        <article>
+            <h2>İletişim</h2>
+            <img src="https://picsum.photos/id/7/600/300" alt="Yazi 1">
+            <p>
+                Adres: 
+            </p>
+            <Address>
+                Zemin İstanbul <br>
+                Şahkulu, Şişhane Metro Durağı, Meşrutiyet Cd. No:125, 34421 <br> 
+                Beyoğlu/İstanbul
+            </Address>
+            <ul>
+                <li><a href="tel:02122223344">0212 222 33 44</a></li>
+                <li><a href="mailto:info@kodluyoruz.org">info@kodluyoruz.org</a></li>
+            </ul>
+            <hr>
+        </article>
+        <!-- Articles - End -->
+    </section>
+    <!-- Content - End -->
+
+    <!-- Footer - Start -->
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Ana Sayfa</a>
+                </li>
+                <li>
+                    <a href="about-us.html">Hakkımızda</a>
+                </li>
+                <li>
+                    <a href="contact.html">İletişim</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- Footer - End -->
+</body>
+</html>
+   ```
+  //index.html
+   ```html
+  <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodluyoruz</title>
+</head>
+<body>
+    <!-- Navbar - Start -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Ana Sayfa</a>
+                </li>
+                <li>
+                    <a href="about-us.html">Hakkımızda</a>
+                </li>
+                <li>
+                    <a href="contact.html">İletişim</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Navbar - End -->
+
+    <!-- Content - Start -->
+    <section>
+        <!-- Articles - Start -->
+        <article>
+            <h2>Birinci Yazı</h2>
+            <img height="300" src="img/photo.jpeg" alt="Yazi 1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, sint?</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Ut culpa impedit repellat quasi!</p>
+            <p>Ducimus, error officia! Neque, nulla!</p>
+            <ol>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Rerum, neque ipsam?</li>
+                <li>Illum, cupiditate quisquam.</li>
+                <li>Magnam, sequi iure?</li>
+            </ol>
+            <hr>
+        </article>
+        <article>
+            <h2>İkinci Yazı</h2>
+            <img src="https://picsum.photos/id/27/600/300" alt="Yazi 1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, sint?</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Ut culpa impedit repellat quasi!</p>
+            <p>Ducimus, error officia! Neque, nulla!</p>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Rerum, neque ipsam?</li>
+                <li>Illum, cupiditate quisquam.</li>
+                <li>Magnam, sequi iure?</li>
+            </ul>
+            <hr>
+        </article>
+        <article>
+            <h2>Üçüncü Yazı</h2>
+            <img src="https://picsum.photos/id/217/600/300" alt="Yazi 1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, sint?</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Ut culpa impedit repellat quasi!</p>
+            <p>Ducimus, error officia! Neque, nulla!</p>
+            <hr>
+        </article>
+        <!-- Articles - End -->
+    </section>
+    <!-- Content - End -->
+
+    <!-- Footer - Start -->
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Ana Sayfa</a>
+                </li>
+                <li>
+                    <a href="about-us.html">Hakkımızda</a>
+                </li>
+                <li>
+                    <a href="contact.html">İletişim</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- Footer - End -->
+</body>
+</html>
+   ```
+</details>
