@@ -374,3 +374,180 @@ Bu videoda; şimdiye kadar öğrendiğimiz HTML etiketleri ile bir web sitesi ol
 </html>
    ```
 </details>
+
+## :brain: Ödev-3 Çikolatalı Küp Tarifi
+
+
+### :question: SORU 
+Bu ödevimizde sevdiğimiz bir yemek ya da tatlının tarifini öğrendiğimiz bir web sitesini, HTML etiketlerini kullanarak yazmaya çalışacağız.
+
+### :green_square: CEVAP
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+  //index.html
+```html
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çikolatalı Küp</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Header - Start -->
+        <header>
+            <h1 class="ana-baslik"><em>...Çikolata Küpleri...</em></h1>
+            <p>
+                <strong><i>çikolatalı ve şam fıstıklı tadımlık lezzetler... Yalnızca 4 malzeme ile hazırlanan çikolata küpleri, renkli kağıtlarda veya kürdan batırılarak servis edilir. Özellikler kalabalık sofralarda yer verilen çikolata küpleri, doğum günü gibi özel etkinliklerde de sunulabilir.</i></strong>
+            </p>
+        </header>    
+    <!-- Header - End -->
+
+    <!-- Content - Start -->
+        <section>
+            <article>
+                <p>
+                    <b>Tarif:</b> Rukiye Beyza Sarıkaya
+                </p>
+                    <div class="container">
+                        <div class="square-mark">
+                            <div class="centered-dot"></div>
+                        </div>
+                        <div class="liste">
+                            <ul>
+                                <li class="liste1"><span class="icerik">Kaç Kişilik:</span>4kişilik</li>
+                                <li class="liste1 marg"><span class="icerik">Hazırlama Süresi:</span>30 dakika</li>
+                                <li class="liste1 marg"><span class="icerik">Pişirme Süresi:</span>10 dakika</li>
+                            </ul>
+                        </div>
+                    </div>
+            </article>
+
+            <article class="bolum">
+                <div class="kirmizi">
+                    Çikolata Küpleri Tarifi İçin Malzemeler..
+                </div>
+                <ul class="liste2ul">
+                    <li class="liste2li">350 gr bitter çikolata</li>
+                    <li class="liste2li">150 ml krema</li>
+                    <li class="liste2li">1 çorba kaşığı tereyağı</li>
+                    <li class="liste2li">150 gr şamfıstık (Badem veya fındık da olabilir</li>
+                </ul>
+            </article>
+            <article class="bolum">
+                <div class="kirmizi">
+                    Çikolata Küpleri Nasıl Yapılır?
+                </div>
+                <ol class="liste2ul padzero">
+                    <li class="liste2li">Bitter çikolatayı benmari usulü eritin.</li>
+                    <li class="liste2li">Eriyen çikolatanın üzerine krema veya tereyağını ekleyip iyice karıştırıp tencereyi bir tezgaha alın.</li>
+                    <li class="liste2li">Şamfıstıkları havanda çok az dövüp irili ufaklı parçalara bölün.</li>
+                    <li class="liste2li">Ufalanan fıstıkları çikolatalı karışıma ekleyip karıştırın.</li>
+                    <li class="liste2li">Hazırladığınız çikolatayı varsa alüminyum hazır bir kare tepsiye, yoksa kenarlarından taşarak yağlı kağıt yerleştirdiğiniz küçük bir tepsiye dökün.</li>
+                    <li class="liste2li">Buzdolabında iki saat bekletin</li>
+                    <li class="liste2li">Çikolatayı kalıptan çıkartın. Kare parçalara bölün.</li>
+                </ol>
+            </article>
+        </section>
+    <!-- Content - End -->
+    <!-- Footer - Start -->
+        <footer>
+            <div class="footer">
+                <h2 class="sonbaslik">Afiyet olsun</h3>
+            </div>
+        </footer>
+    <!-- Footer - End -->
+    
+</body>
+</html>
+  ```
+  //style.css
+  ```css
+  body{
+    background-color: #E0C9A9;
+}
+.ana-baslik{
+    color: #5E2610;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.square-mark{
+    position: relative;
+    width: 6px;
+    height: 6px;
+    display: flex;
+    align-self: center;
+    background-color: black;
+    
+}
+.centered-dot{
+    width: 1.3px;
+    height: 1.3px;
+    background-color: rgb(255,255,255);
+    margin: 0;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.liste{
+    display: flex;
+    justify-self: center;
+    margin: auto;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+li.liste1{
+    text-decoration: underline;
+    list-style-type: none;
+    display:inline-flex;
+    margin-left: 10px;
+    margin-right: auto;
+    text-align: center;
+    ;
+}
+.icerik{
+    font-weight: bold;
+    color: #9C3B0F;
+}
+.bolum{
+    margin-left: 33%;
+    margin-top: 20px;
+}
+.kirmizi{
+    display: inline;
+    background-color: #963102;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.liste2ul{
+    margin-top: 20px;
+    margin-left: 3%;
+}
+.liste2li{
+    margin-bottom: 5px;
+}
+.padzero{
+    padding: 0;
+}
+.footer{
+    letter-spacing: 2px;
+    color: #2C1504;
+}
+.sonbaslik{
+    margin-left: 60%;
+    font-weight:500;
+}
+   ```
