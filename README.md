@@ -952,7 +952,8 @@ Bu sayfada şu ana kadar öğrendiğiniz her şeyi kullanabilirsiniz. Bu sizin H
 }
 ```
   </details>
-  ## :brain: CSS Ödev-3 Google Ana Sayfasını Tasarlamak
+
+## :brain: CSS Ödev-3 Google Ana Sayfasını Tasarlamak
 
 
 ### :question: SORU 
