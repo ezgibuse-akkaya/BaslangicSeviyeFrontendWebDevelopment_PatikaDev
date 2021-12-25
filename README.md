@@ -550,7 +550,9 @@ li.liste1{
     margin-left: 60%;
     font-weight:500;
           }
+  
   ```
+  </details>
   
 ## :brain: CSS Ödev-1 Sayfamıza Biraz Makyaj Yapalım
 
