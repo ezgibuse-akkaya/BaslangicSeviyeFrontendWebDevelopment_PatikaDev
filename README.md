@@ -16,7 +16,5 @@ Ad-Soyadın altında alt başlık olarak Hakkımda yazmalıdır.
 Altına paragraf içerisinde neler yaptığınızı ve nelerden hoşlandığınızı yazabilirsiniz.
 Web sitenizi kaydederken dosya adı olarak 'index.html' seçmeniz gerekmektedir.
 Yazdığınız kodları açıklayan yorum satırları eklemeyi unutmayın.
-![Uploading firstwebpage.png…]()
-First Web PageYaptığınız sayfa üstteki gibi bir yapıda olabilir.
 
 ### :green_square: CEVAP
