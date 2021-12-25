@@ -788,6 +788,7 @@ body{
     padding-left: 150px;
 }
   ```
+  </details>
   
   ## :brain: CSS Ödev-2  Google Ana Sayfasını Tasarlamak
   
