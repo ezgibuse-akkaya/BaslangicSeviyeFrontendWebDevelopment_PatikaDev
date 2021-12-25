@@ -5,7 +5,7 @@
 Bu README dosyasında bu eğitimdeki pratik ve ödevlerin cevaplarını bulacaksınız.
 
 --------------------------------------------------------------------------------------------------------------------------------------
-## :brain: Ödev-1  İlk Web Sayfamızı Oluşturmak
+## :brain: HTML Ödev-1  İlk Web Sayfamızı Oluşturmak
 
 
 ### :question: SORU 
@@ -46,7 +46,7 @@ Yazdığınız kodları açıklayan yorum satırları eklemeyi unutmayın.
 ```
 </details>
 
-## :brain: Ödev-2  Kişisel Sayfamızı Detaylandırmaya Devam Etmek
+## :brain: HTML Ödev-2  Kişisel Sayfamızı Detaylandırmaya Devam Etmek
 
 
 ### :question: SORU 
@@ -121,7 +121,7 @@ Kurduğunuz yapılarda block, inline gibi elementler kullanmaya çalışın.
   ```
 </details>
 
-## :brain: Bölüm Sonu Çalışması
+## :brain: HTML Bölüm Sonu Çalışması
 
 
 ### :question: SORU 
@@ -375,7 +375,7 @@ Bu videoda; şimdiye kadar öğrendiğimiz HTML etiketleri ile bir web sitesi ol
    ```
 </details>
 
-## :brain: Ödev-3 Çikolatalı Küp Tarifi
+## :brain: HTML Ödev-3 Çikolatalı Küp Tarifi
 
 
 ### :question: SORU 
@@ -551,3 +551,237 @@ li.liste1{
     font-weight:500;
 }
    ```
+## :brain: CSS Ödev-1 Sayfamıza Biraz Makyaj Yapalım
+
+
+### :question: SORU 
+  
+Herkese merhaba arkadaşlar kanalımıza hoş geldiniz, bugün HTML sayfamıza hafif bir makyaj yapacağız. Komik gelse de aslında tam olarak böyle yapacağız. Bir HTML sayfası oluşturup buna CSS ile tasarımsal açıdan güzellikler katacağız, HTML sayfamıza güzelliği getireceğiz.
+
+HTML sayfasını sıfırdan oluşturacaksınız. Eklemek istediğiniz ekstra özellikler tamamen size kalmış durumda.
+Sitemiz birkaç sayfadan oluşacak. Yani menü kısmında linkler vererek başka sayfaya geçilebilecek.
+Renkler tamamen sizin zevkinize kalmış durumda. Fakat renkler konusunda biraz yardım almak isterseniz Colorhunt renk paletleri konusunda muazzam bir site.
+Yazacağınız CSS etiketlerini Inline ve Internal yazabilirsiniz. External kullanmak tamamen sizin tercihinizdir.
+CSS yazarken noktalı virgülleri unutmayın. Biliyorum unutacaksınız, olur böyle şeyler...
+CSS ile ilgili yardımcı kaynak için w3schools.com'un CSS tutorialını, Türkçe kaynak için Fatih Hayrioğlu'nun web sitesini kullanabilirsiniz.
+Kendini tekrar eden yapılar kullanmamaya özen gösteriniz. Ya da kendini tekrar eden yapılarda kullandığımız özelliği kullanın. (İpucu: Inline(Etikete Özel), Internal(Aynı Dosyada) ve External(CSS Dosyasında) CSS Kullanımı)
+Sayfalarınızda kullandığınız fontlar için daha önce de videolarda bahsettiğimiz Google Fonts'u kullanabilirsiniz.
+Ana sayfada bulunan listelerin noktalarını ortalamak için list-style-position: inside'i kullanabilirsiniz.
+
+### :green_square: CEVAP
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+  //about-us.html
+```html
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <!-- Header Bölümü -->
+    <header>
+        <!-- Anasayfa Başlık -->
+        <h1 class="anabaslik">Müzik Dükkanım</h1>
+    </header>
+    <!-- Nav Bölümü -->
+    <nav class="nav">
+        <ul class="navlist">
+            <li class="navlistli"><a href="index.html">Ana Sayfa</a></li>
+            <li class="navlistli ml15"><a href="products.html">Ürünlerimiz</a></li>
+            <li class="navlistli ml15"><a href="about-us.html">Hakkımızda</a></li>
+        </ul>
+    </nav>
+    <!-- Hakkımızda Main -->
+    <main>
+        <article>
+            <h2 class="hakkimizdabaslik">Hakkımızda</h2>
+            <p>Müzik Dükkanım 2021 yılında Cengiz C. Mataracı ve Furkan Tolga Yüce tarafından kurulmuştur. Çeşitli müzik aletlerini uygun fiyatlar ile buluşturmak için kurulmuştur.</p>
+        </article>
+        <article>
+            <h4 class="hakkimizdaaltbaslik">Vizyonumuz</h4>
+            <p>İnsanlara kaliteli müzik aletleri sağlamak. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta animi ea nostrum unde sapiente quas, cupiditate iste nisi vitae earum? Optio cumque eius debitis culpa recusandae. Atque neque minima soluta consequatur quos eius, eveniet vitae laborum in nihil harum corporis rerum expedita facilis perspiciatis corrupti deserunt consequuntur architecto dolorem ducimus accusantium fugit culpa asperiores ratione? Labore neque harum sed asperiores.</p>
+        </article>
+        <article>
+            <h4 class="hakkimizdaaltbaslik">Misyonumuz</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dolore laborum veritatis facere mollitia veniam optio, qui eum tempora, maxime unde quibusdam repudiandae nobis, nihil enim praesentium ratione velit? Earum, molestiae. Officia voluptatum quae autem illum saepe aliquid enim rerum quaerat, dicta tenetur ipsum. Minima aliquid iusto dolorum hic tempora amet voluptatibus delectus, atque deserunt reprehenderit perspiciatis facilis iure id harum totam velit perferendis rem quos quia nulla adipisci molestias aut itaque. Placeat nam, reprehenderit quo voluptas in cumque sequi est magnam, mollitia ad, sit eveniet assumenda corporis molestias laborum?</p>
+        </article>
+    </main>
+</body>
+</html>
+  ```
+   //index.html
+   ```html
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <!-- Header Bölümü -->
+    <header>
+        <!-- Anasayfa Başlık -->
+        <h1 class="anabaslik">Müzik Dükkanım</h1>
+    </header>
+    <!-- Nav Bölümü -->
+    <nav class="nav">
+        <ul class="navlist">
+            <li class="navlistli"><a href="index.html">Ana Sayfa</a></li>
+            <li class="navlistli ml15"><a href="products.html">Ürünlerimiz</a></li>
+            <li class="navlistli ml15"><a href="about-us.html">Hakkımızda</a></li>
+        </ul>
+    </nav>
+    <!-- Anasayfa Main -->
+    <main>
+        <article>
+            <h2 class="anasayfabaslik">Ana Sayfa</h2>
+            <p class="anasayfap1">Müzik Dükkanım sitemize hoşgeldiniz! Bu sitede çeşitli müzik aletlerini bulabilirsiniz. Uygun fiyatlarımız ve kalite ürünlerimiz için <a href="products.html">Ürünlerimiz</a> sayfamızı ziyaret edebilirsiniz.</p>
+        </article>
+        <article>
+            <h4 class="anasayfaaltbaslik">Sitemizde Bulunan Müzik Aletleri</h4>
+            <div class="listdiv">
+                <ul class="anasayfalistul">
+                    <li class="anasayfalistli">Gitar</li>
+                    <li class="anasayfalistli">Davul</li>
+                    <li class="anasayfalistli">Piyano</li>
+                    <li class="anasayfalistli">Keman</li>
+                </ul>
+            </div> 
+        </article>
+    </main>
+</body>
+</html>
+  ```
+  //products.html
+  ```html
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünlerimiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <!-- Header Bölümü -->
+    <header>
+        <!-- Anasayfa Başlık -->
+        <h1 class="anabaslik">Müzik Dükkanım</h1>
+    </header>
+    <!-- Nav Bölümü -->
+    <nav class="nav">
+        <ul class="navlist">
+            <li class="navlistli"><a href="index.html">Ana Sayfa</a></li>
+            <li class="navlistli ml15"><a href="products.html">Ürünlerimiz</a></li>
+            <li class="navlistli ml15"><a href="about-us.html">Hakkımızda</a></li>
+        </ul>
+    </nav>
+    <!-- Ürünlerimiz İçerik -->
+    <main>
+        <article>
+            <h2 class="urunlerimizbaslik">Ürünlerimiz</h2>
+            <div class="urunlerlistediv">
+                <ol class="urunlerlisteol">
+                    <li><img width="300" height="300" src="img/fenderstrat.jpg" alt="Gitar"><br>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></li>
+                    <li><img width="300" height="300" src="img/gibsonlespaul.jpg" alt="Gitar"><br>Gibson Les Paul Special <strong>5250₺</strong></li>
+                    <li><img width="300" height="300" src="img/davulset1.jpg" alt="Davul"><br>Mapex AR529STK Armory Akustik Davul Seti <strong>9800₺</strong></li>
+                    <li><img width="300" height="300" src="img/davulset2.jpg" alt="Davul"><br>Yamaha Rydeen 20 Inch Davul Seti <strong>11500₺</strong></li>
+                    <li><img width="300" height="300" src="img/keman1.jpg" alt="Keman"><br>Yamaha V5SA Keman (4/4) <strong>6000₺</strong></li>
+                    <li><img width="300" height="300" src="img/keman2.jpg" alt="Keman"><br>OFFENBACH El Yapımı 4/4 Keman <strong>5000₺</strong></li>
+                    <li><img width="300" height="300" src="img/piyano1.jpg" alt="Piyano"><br>Kurzweil KA130SR Dijital Piyano <strong>6800₺</strong></li>
+                    <li><img width="300" height="300" src="img/piyano2.jpg" alt="Piyano"><br>Yamaha GB1 Akustik Kuyruklu Piyano (Parlak Siyah) <strong>180000₺</strong></li>
+                </ol>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
+  ```
+    //style.css
+```css
+  /* --------------- Genel --------------- */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* --------------- Header --------------- */
+.anabaslik{
+    font-weight: bold;
+    color: #bd1b55;
+    text-align: center;
+}
+
+/* --------------- Nav --------------- */
+.ml15{
+    margin-left: 15px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    
+}
+.navlist{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.navlistli{
+    display: inline;
+}
+
+/*--------------- Anasayfa Main --------------- */
+.anasayfabaslik{
+    color: #722ff8;
+    text-align: center;
+}
+.anasayfap1{
+    text-align: center;
+}
+.anasayfaaltbaslik{
+    color: #bb921b;
+    text-align: center;
+}
+.listdiv{
+    display: flex;
+    justify-content: center;
+}
+.anasayfalistul{
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+/* --------------- Hakkımızda Main --------------- */
+.hakkimizdabaslik{
+    color: #722ff8;
+    text-align: center;
+}
+.hakkimizdaaltbaslik{
+    color: #bb921b;
+}
+
+/* --------------- Ürünlerimiz Main --------------- */
+.urunlerimizbaslik{
+    color: #722ff8;
+    text-align: center;
+}
+.urunlerlistediv{
+    display: flex;
+    justify-content: center;
+}
+.urunlerlisteol{
+    padding: 0;
+    padding-left: 150px;
+}
+  ```
