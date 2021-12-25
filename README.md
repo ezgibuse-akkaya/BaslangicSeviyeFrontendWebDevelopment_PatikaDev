@@ -710,9 +710,8 @@ Ana sayfada bulunan listelerin noktalarını ortalamak için list-style-position
 </body>
 </html>
   ```
-    
-//style.css
-    ```css
+    //style.css
+```css
   /* --------------- Genel --------------- */
 body{
     font-family:Arial, Helvetica, sans-serif;
