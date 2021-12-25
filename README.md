@@ -551,6 +551,7 @@ li.liste1{
     font-weight:500;
           }
   ```
+  
 ## :brain: CSS Ödev-1 Sayfamıza Biraz Makyaj Yapalım
 
 
