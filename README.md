@@ -1263,3 +1263,318 @@ a{
 }
 ```
   </details>
+  
+ ## :brain: BOOTSTRAP Ödev-1 Bootstrap Özelliklerini Kullanarak Yaptığımız Siteyi Geliştirelim
+ 
+ ### :question: SORU 
+ 
+Hatırlar mısınız CSS'in ilk ödevinde boynu bükük bir site yapmıştık. Bu site CSS'in özelliklerini kullanan bir müzik aleti satış sitesiydi. Bu siteyi Bootstrap ile tekrar tasarlayacağız.
+
+# Sizden Beklediklerimiz
+HTML kısmını önceki ödevden alabilirsiniz fakat baştan yapmanızı öneririz.
+Menüyü koyu renkli olarak düzenleyin. İsterseniz arka plan rengi de verebilirsiniz.
+Ana sayfaya bir jumbotron koyup içeriğinizin açıklamasını yazınız.
+Arka plan rengini #E9ECEF ile değiştirin.
+Ürünlerimiz sayfasında card yapısını kullanın.
+Kullandığınız card yapısını grid sistemin içinde kullanın.
+Ürün card boyutlarının tamamen aynı olduğuna dikkat edin.
+Hakkımızda sayfasını da bir card yapısı içine alın.
+Bootstrap Dökümantasyonu'nu iyi inceleyip farklı elementleri denemeye çalışın.
+
+### :green_square: CEVAP
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+  //about-us.html
+```html
+  <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hakkımızda</title>
+  </head>
+  <body style="background-color: #E9ECEF; font-family:Arial, Helvetica, sans-serif;">
+    <!-- Nav Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger" href="index.html">Müzik Dükkanım</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-secondary" aria-current="page" href="index.html">Ana Sayfa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="products.html">Ürünlerimiz</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="about-us.html">Hakkımızda</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="mt-5 text-danger text-center">Hakkımızda</h1>
+      <p>Müzik Dükkanım 2021 yılında Cengiz C. Mataracı ve Furkan Tolga Yüce tarafından kurulmuştur. Çeşitli müzik aletlerini uygun fiyatlar ile buluşturmak için kurulmuştur.</p>
+      <section class="row">
+        <article class="col-12">
+          <div class="card mb-3" style="background-color: #E9ECEF;">
+            <div class="card-body">
+              <h5 class="card-title fw-bold" style="color: #bb921b;">Vizyonumuz</h5>
+              <p class="card-text">İnsanlara kaliteli müzik aletleri sağlamak. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta animi ea nostrum unde sapiente quas, cupiditate iste nisi vitae earum? Optio cumque eius debitis culpa recusandae. Atque neque minima soluta consequatur quos eius, eveniet vitae laborum in nihil harum corporis rerum expedita facilis perspiciatis corrupti deserunt consequuntur architecto dolorem ducimus accusantium fugit culpa asperiores ratione? Labore neque harum sed asperiores.</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-12">
+          <div class="card mb-3" style="background-color: #E9ECEF;">
+            <div class="card-body">
+              <h5 class="card-title fw-bold" style="color: #bb921b;">Misyonumuz</h5>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dolore laborum veritatis facere mollitia veniam optio, qui eum tempora, maxime unde quibusdam repudiandae nobis, nihil enim praesentium ratione velit? Earum, molestiae. Officia voluptatum quae autem illum saepe aliquid enim rerum quaerat, dicta tenetur ipsum. Minima aliquid iusto dolorum hic tempora amet voluptatibus delectus, atque deserunt reprehenderit perspiciatis facilis iure id harum totam velit perferendis rem quos quia nulla adipisci molestias aut itaque. Placeat nam, reprehenderit quo voluptas in cumque sequi est magnam, mollitia ad, sit eveniet assumenda corporis molestias laborum?</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <hr>
+    </main>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+```
+    ```html
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+```
+  //index.html
+```html
+  <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Ana Sayfa</title>
+  </head>
+  <body style="background-color: #E9ECEF; font-family:Arial, Helvetica, sans-serif;">
+    
+    <!-- Nav Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-danger" href="index.html">Müzik Dükkanım</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-secondary" aria-current="page" href="index.html">Ana Sayfa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="products.html">Ürünlerimiz</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="about-us.html">Hakkımızda</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Home Main -->
+    <main class="container">
+        <section class="jumbotron mt-5">
+            <h1 class="text-danger text-center">Merhaba!</h1>
+            <p class="text-center">Müzik Dükkanım sitemize hoşgeldiniz! Bu sitede çeşitli müzik aletlerini bulabilirsiniz. Uygun fiyatlarımız ve kalite ürünlerimiz için <a href="products.html">Ürünlerimiz</a> sayfamızı ziyaret edebilirsiniz.</p>
+            <hr>
+            <h4 class="text-center fw-bold" style="color: #bb921b;">Sitemizde Bulunan Müzik Aletleri</h4>
+            <div class="text-center">
+                <ul class="" style="list-style-position: inside; padding: 0; margin: 0;">
+                    <li class="">Gitar</li>
+                    <li class="">Davul</li>
+                    <li class="">Piyano</li>
+                    <li class="">Keman</li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <a class="btn btn-primary mt-2" href="about-us.html">Hakkımızda</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+  ```
+//products.html
+```html
+  <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Ürünlerimiz</title>
+  </head>
+  <body style="background-color: #E9ECEF; font-family:Arial, Helvetica, sans-serif;">
+    <!-- Nav Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger" href="index.html">Müzik Dükkanım</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-secondary" aria-current="page" href="index.html">Ana Sayfa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="products.html">Ürünlerimiz</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="about-us.html">Hakkımızda</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container">
+      <section class="row justify-content-center">
+        <h1 class="text-danger text-center mt-5">Ürünlerimiz</h1>
+        <div class="col-4 mb-2">
+          <article class="card mx-auto" style="width: 18rem;">
+            <img src="img/fenderstrat.jpg" class="card-img-top" alt="Gitar">
+            <article class="card-body">
+              <h5 class="card-title">Fender</h5>
+              <p class="card-text">Fender Masterbuilt 59 Stratocaster</p>
+              <a href="#" class="btn btn-primary"><strong style="color: yellow;">6.000 ₺</strong>  - Satın Al</a>
+            </article>
+          </article>
+        </div>
+        <div class="col-4 mb-2">
+          <article class="card mx-auto" style="width: 18rem;">
+            <img src="img/gibsonlespaul.jpg" class="card-img-top" alt="Gitar">
+            <article class="card-body">
+              <h5 class="card-title">Gibson</h5>
+              <p class="card-text">Gibson Les Paul Special</p>
+              <a href="#" class="btn btn-primary"><strong style="color: yellow;">5.250 ₺</strong>  - Satın Al</a>
+            </article>
+          </article>
+        </div>
+        <div class="col-4 mb-2">
+          <article class="card mx-auto" style="width: 18rem;">
+            <img src="img/keman1.jpg" class="card-img-top" alt="Keman">
+            <article class="card-body">
+              <h5 class="card-title">Yamaha</h5>
+              <p class="card-text">Yamaha V5SA</p>
+              <a href="#" class="btn btn-primary"><strong style="color: yellow;">6.000 ₺</strong>  - Satın Al</a>
+            </article>
+          </article>
+        </div>
+        <div class="col-4 mb-2">
+          <article class="card mx-auto" style="width: 18rem;">
+            <img src="img/keman2.jpg" class="card-img-top" alt="Keman">
+            <article class="card-body">
+              <h5 class="card-title">OFFENBACH</h5>
+              <p class="card-text">OFFENBACH El Yapımı</p>
+              <a href="#" class="btn btn-primary"><strong style="color: yellow;">5.000 ₺</strong>  - Satın Al</a>
+            </article>
+          </article>
+        </div>
+        <div class="col-4 mb-2">
+          <article class="card mx-auto" style="width: 18rem;">
+            <img src="img/davulset1.jpg" class="card-img-top" alt="Davul">
+            <article class="card-body">
+              <h5 class="card-title">Mapex</h5>
+              <p class="card-text">Mapex AR529STK Armory</p>
+              <a href="#" class="btn btn-primary"><strong style="color: yellow;">9.800 ₺</strong>  - Satın Al</a>
+            </article>
+          </article>
+        </div>
+        <div class="col-4 mb-2">
+          <article class="card mx-auto" style="width: 18rem;">
+            <img src="img/davulset2.jpg" class="card-img-top" alt="Davul">
+            <article class="card-body">
+              <h5 class="card-title">Yamaha</h5>
+              <p class="card-text">Yamaha Rydeen 20 Inch</p>
+              <a href="#" class="btn btn-primary"><strong style="color: yellow;">11.500 ₺</strong>  - Satın Al</a>
+            </article>
+          </article>
+        </div>
+        <div class="col-4 mb-2">
+          <article class="card mx-auto" style="width: 18rem;">
+            <img src="img/piyano1.jpg" class="card-img-top" alt="Piyano">
+            <article class="card-body">
+              <h5 class="card-title">Kurzweil</h5>
+              <p class="card-text">Kurzweil KA130SR</p>
+              <a href="#" class="btn btn-primary"><strong style="color: yellow;">6.800 ₺</strong>  - Satın Al</a>
+            </article>
+          </article>
+        </div>
+        <div class="col-4 mb-2">
+          <article class="card mx-auto" style="width: 18rem;">
+            <img src="img/piyano2.jpg" class="card-img-top" alt="Piyano">
+            <article class="card-body">
+              <h5 class="card-title">Yamaha</h5>
+              <p class="card-text">Yamaha GB1 Akustik Kuyruklu</p>
+              <a href="#" class="btn btn-primary"><strong style="color: yellow;">180.000 ₺</strong>  - Satın Al</a>
+            </article>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+```
+  </details>
+
