@@ -3353,7 +3353,7 @@ Burada bizim verdiğimiz ile sınırlı kalmak zorunda değilsiniz, hatta hayal 
 <summary>Kodu görmek için tıklayınız.</summary>
 //index.html
   ```html
-  <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
