@@ -3339,3 +3339,147 @@ button.ref:hover {
 }
 ```
       </details>
+# Başlangıç Seviye Web Development Patikası - PatikaDev
+
+[Patika.dev](https://app.patika.dev/egitimler) adresindeki "Başlangıç Seviye Frontend Web Development Patikası" eğitiminde kullandığım kaynak kodları içeren bir repo.
+
+Bu README dosyasında bu eğitimdeki pratik ve ödevlerin cevaplarını bulacaksınız.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+## :brain: JAVASCRİPT Ödev-1  Javascript Saat Ve Karşılama
+
+
+### :question: SORU 
+Basitçe sizden girişte isminizi isteyip sonra bu ismi karşılama ekranına yerleştirerek o anki saati ve günü gösteren bir ekran. Yapması oldukça kolay ve zevkli!
+
+Burada bizim verdiğimiz ile sınırlı kalmak zorunda değilsiniz, hatta hayal gücünüzü çalıştırarak yeni şeyler üretirseniz daha mutlu oluruz!
+
+### :green_square: CEVAP
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+//index.html
+```html
+  <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&display=swap" rel="stylesheet">
+    <title>Clock</title>
+  </head>
+  <body onload="startTime()" class="bg-dark">
+    <header class="text-center"><img src="images/kodluyoruz.png" alt=""></header>
+    <main class="container text-center">
+        <section class="row mx-auto">
+            <article class="col user-name"></article>
+        </section>
+        <section class="row mx-auto">
+            <article class="col clock"></article>
+        </section>
+        <section class="row mx-auto">
+            <article class="col">tarihinde <span style="font-weight: bold;">Frontend Web Development Patikası</span>'nın Javascript bölümü 1. Ödevindesiniz.</article>
+        </section>
+    </main>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Our JavaScript DOCS -->
+    <script src="js/clock.js"></script>
+  </body>
+</html>
+  ```
+//clock.js
+  ```html
+
+let userNameCol = document.querySelector(".user-name");
+let clockCol = document.querySelector(".clock");
+
+function startTime(){
+    let today = new Date();
+
+    let hour = today.getHours();
+    let minute = today.getMinutes();
+    let second = today.getSeconds();
+    let day = today.getDay();
+
+    switch (day){
+        case 1:
+            day = "Pazartesi";
+            break;
+        case 2:
+            day = "Salı";
+            break;
+        case 3:
+            day = "Çarşamba";
+            break;
+        case 4:
+            day = "Perşembe";
+            break;
+        case 5:
+            day = "Cuma";
+            break;
+        case 6:
+            day = "Cumartesi";
+            break;
+        case 7:
+            day = "Pazar";
+            break;
+    };
+    
+    function checkTime(i){
+        if (i < 10) {i = '0' + i};
+        return i;
+    };
+
+    hour = checkTime(hour);
+    minute = checkTime(minute);
+    second = checkTime(second);
+
+    clockCol.innerHTML = `${hour}:${minute}:${second} ${day}`;
+    
+    let t = setTimeout(startTime,500);
+
+}
+
+
+
+let userName = prompt("Adınız Nedir?");
+
+    if (userName.length === 0){
+        userNameCol.innerHTML = `Merhaba, Guest! Hoş geldin!`;
+    }
+    else{
+        userNameCol.innerHTML = `Merhaba, ${userName}! Hoş geldin!`;
+    };
+  ```
+   //style.css
+  ```css
+    body{
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    color: #F88908;
+    letter-spacing: 3px;
+}
+header{
+    padding-top: 75px;
+}
+```
+                   </details>
