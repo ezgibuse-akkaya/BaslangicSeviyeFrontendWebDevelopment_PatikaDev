@@ -3338,14 +3338,8 @@ button.ref:hover {
   margin-left: 8px;
 }
 ```
-      </details>
-# Başlangıç Seviye Web Development Patikası - PatikaDev
+</details>
 
-[Patika.dev](https://app.patika.dev/egitimler) adresindeki "Başlangıç Seviye Frontend Web Development Patikası" eğitiminde kullandığım kaynak kodları içeren bir repo.
-
-Bu README dosyasında bu eğitimdeki pratik ve ödevlerin cevaplarını bulacaksınız.
-
---------------------------------------------------------------------------------------------------------------------------------------
 ## :brain: JAVASCRİPT Ödev-1  Javascript Saat Ve Karşılama
 
 
