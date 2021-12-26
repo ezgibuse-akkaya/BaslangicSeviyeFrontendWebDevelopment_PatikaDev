@@ -3352,7 +3352,7 @@ Burada bizim verdiğimiz ile sınırlı kalmak zorunda değilsiniz, hatta hayal 
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
 //index.html
-```html
+  ```html
   <!doctype html>
 <html lang="en">
   <head>
