@@ -3947,8 +3947,8 @@ button:hover {
     background-color: #e2e2e2;
 }
 /* -------------------- MAIN - END -------------------- */
-```
-</details>
+      ```
+ </details>
 
                       
 ## :brain: HTML Ödev-3  Asian Kitchen's Menu
