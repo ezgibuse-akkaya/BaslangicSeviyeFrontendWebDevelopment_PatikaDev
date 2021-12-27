@@ -3575,8 +3575,9 @@ Listeye Boş Ekleyemessiniz!
   </body>
 </html>
   ```
-  //app.js
-  ```js
+//app.js
+```js
+  
 // -------------------- DOM - START --------------------
 const inputDOM = document.querySelector(".inputArea");
 const submitButtonDOM = document.querySelector(".submitButton");
@@ -3949,6 +3950,7 @@ button:hover {
 ```
 </details>
 
+                      
 ## :brain: HTML Ödev-3  Asian Kitchen's Menu
 
 
@@ -3970,9 +3972,9 @@ Site içerisinde map, reduce gibi methodları kullanmanız gerekecek. Hatırlam�
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Asian Kitchen</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Asian Kitchen</title>
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zilla+Slab&display=swap"
