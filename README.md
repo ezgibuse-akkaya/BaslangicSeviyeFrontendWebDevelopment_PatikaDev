@@ -3948,3 +3948,300 @@ button:hover {
 /* -------------------- MAIN - END -------------------- */
 ```
 </details>
+
+## :brain: HTML Ödev-3  Asian Kitchen's Menu
+
+
+### :question: SORU 
+Bir uzak doğu restoran menüsü şeklinde düzenlenmiş sitede JavaScript sayesinde sayfalar arasında gezinilebilmekte. Oldukça hoş bir görüntüye sahip bu sitenin HTML ve CSS kodlarını size hazır vereceğiz. Sizden istediğimiz JavaScript kısmını tamamlamanız. Siteyi detaylı incelemek için Asian Kitchen's Menu
+
+Sitedeki içerik JavaScript'te menu şeklinde bir dizi içinde objeler olarak tanımlanacak.
+Id, title, category, price, img ve desc bölümleri olacak.
+İçeriği istediğiniz gibi değiştirebilirsiniz yalnız değiştirirken kategori isimlerine ekstra dikkat edin.
+Butonlar da js dosyasından gelecek.
+Site içerisinde map, reduce gibi methodları kullanmanız gerekecek. Hatırlamıyorsanız Map ile Array İçerisideki Yapının Değiştirilerek Yeni Liste Oluşturulması #38 isimli videoya dönebilirsiniz.
+
+### :green_square: CEVAP
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+//index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asian Kitchen</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zilla+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boostrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="menu">
+        <!-- title -->
+        <div class="title">
+          <h2>Asian Kitchen's Menu</h2>
+        </div>
+        <!-- filter buttons-->
+        <div class="btn-container"></div>
+        <!-- menu items -->
+        <div class="section-center row">
+          <!-- single-item -->
+
+          <!-- end of single item -->
+        </div>
+      </section>
+    </div>
+
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
+ ```
+//app.js
+```js
+const menu = [
+  {
+    id: 1,
+    title: "Tteokbokki",
+    category: "Korea",
+    price: 10.99,
+    img:
+      "https://twoplaidaprons.com/wp-content/uploads/2020/09/tteokbokki-top-down-view-of-tteokbokki-in-a-bowl-500x500.jpg",
+    desc: `Spicy rice cakes, serving with fish cake.`,
+  },
+  {
+    id: 2,
+    title: "Chicken Ramen",
+    category: "Japan",
+    price: 7.99,
+    img:
+      "https://www.forkknifeswoon.com/wp-content/uploads/2014/10/simple-homemade-chicken-ramen-fork-knife-swoon-01.jpg",
+    desc: `Chicken noodle soup, serving with vegetables such as soy bean, green onion. In an optional you can ask for egg. `,
+  },
+  {
+    id: 3,
+    title: "Bibimbap",
+    category: "Korea",
+    price: 8.99,
+    img:
+      "https://dwellbymichelle.com/wp-content/uploads/2020/05/DWELL-bibimbap.jpg",
+    desc: `Boiling vegetables, serving with special hot sauce`,
+  },
+  {
+    id: 4,
+    title: "Dan Dan Mian",
+    category: "China",
+    price: 5.99,
+    img:
+      "https://www.savingdessert.com/wp-content/uploads/2019/02/Dan-Dan-Noodles-10.jpg",
+    desc: `Dan dan noodle, serving with green onion `,
+  },
+  {
+    id: 5,
+    title: "Yangzhou Fried Rice",
+    category: "China",
+    price: 12.99,
+    img:
+      "https://salu-salo.com/wp-content/uploads/2013/02/Yangzhou-Fried-Rice1.jpg",
+    desc: `Yangzhou style fried rice, serving with bean and pickles `,
+  },
+  {
+    id: 6,
+    title: "Onigiri",
+    category: "Japan",
+    price: 9.99,
+    img:
+      "https://www.manusmenu.com/wp-content/uploads/2017/08/Onigiri-3-1-of-1.jpg",
+    desc: `Rice Sandwich, serving with soy sauce`,
+  },
+  {
+    id: 7,
+    title: "Jajangmyeon",
+    category: "Korea",
+    price: 15.99,
+    img:
+      "https://www.curiouscuisiniere.com/wp-content/uploads/2020/04/Jajangmyeon-Korean-Noodles-in-Black-Bean-Sauce5.1200H-720x540.jpg",
+    desc: `Black bean sauce noodle, serving with green onion `,
+  },
+  {
+    id: 8,
+    title: "Ma Yi Shang Shu",
+    category: "China",
+    price: 12.99,
+    img:
+      "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/F688C2F6-86EC-46C4-B9C7-A6BA01DF7437/Derivates/32E3E72A-F786-406D-AF7F-B30980A9AC6C.jpg",
+    desc: `Hot pepper sauce noodle, serving with soy bean and onion`,
+  },
+  {
+    id: 9,
+    title: "Doroyaki",
+    category: "Japan",
+    price: 3.99,
+    img:
+      "https://www.justonecookbook.com/wp-content/uploads/2011/10/Dorayaki-New-500x400.jpg",
+    desc: `Red bean paste dessert, serving with honey.`,
+  },
+];
+
+// CREATE ELEMENT
+let itemMenu = document.createElement('div');
+itemMenu.classList.add('menu-items', 'col-lg-6', 'col-sm-12');
+itemMenu.innerHTML = `
+<img src="${menu[0].img}" alt="${menu[0].title}" class="photo">
+<div class="menu-info">
+  <div class="menu-title">
+    <h4>${menu[0].title}</h4>
+    <h4 class="price">${menu[0].price}</h4>
+  </div>
+  <div class="menu-text">
+    ${menu[0].desc}
+  </div>
+</div>
+`;
+
+const section = document.querySelector(".section-center");
+const btnContainer = document.querySelector(".btn-container");
+
+const categories = menu.reduce(
+  (values, item) => {
+    if (!values.includes(item.category)) {
+      values.push(item.category);
+    }
+    return values;
+  },
+  ["All"]
+);
+
+const categoryList = () => {
+  const categoryBtns = categories
+    .map((category) => {
+      return `<button class="btn btn-outline-dark btn-item" data-id=${category}>${category}</button>`;
+    })
+    .join("");
+
+  btnContainer.innerHTML = categoryBtns;
+  const filterBtns = document.querySelectorAll(".btn-item");
+
+  //filter menu
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const category = e.currentTarget.dataset.id;
+      console.log(category);
+      const menuCategory = menu.filter((menuItem) => {
+        if (menuItem.category === category) {
+          return menuItem;
+        }
+      });
+      if (category === "All") {
+        menuList(menu);
+      } else {
+        menuList(menuCategory);
+      }
+    });
+  });
+};
+
+const menuList = (menuItems) => {
+  let displayMenu = menuItems.map((item) => {
+    return `<div class="menu-items col-lg-6 col-sm-12">
+            <img
+              src=${item.img}
+              alt=${item.title}
+              class="photo"
+            />
+            <div class="menu-info">
+              <div class="menu-title">
+                <h4>${item.title}</h4>
+                <h4 class="price">${item.price}</h4>
+              </div>
+              <div class="menu-text">
+                ${item.desc}
+              </div>
+            </div>
+          </div>
+    `;
+  });
+  displayMenu = displayMenu.join("");
+  section.innerHTML = displayMenu;
+};
+
+menuList(menu);
+categoryList();
+ ```
+ //style.css
+  ```css
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f8;
+  font-family: "Zilla Slab", serif;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #ff6a23;
+}
+.menu {
+  margin-top: 20px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.btn-item {
+  margin-left: 15px;
+}
+
+.photo {
+  width: 30%;
+  height: 175px;
+  object-fit: cover;
+  border: 0.25rem solid black;
+  border-radius: 10px;
+}
+.menu-items {
+  display: flex;
+  margin: 20px 0;
+}
+.menu-info {
+  margin-left: 20px;
+  width: 100%;
+}
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+h4 {
+  color: #e00a00;
+}
+
+.menu-text {
+  padding-top: 20px;
+}
+  ```
+ </details>
